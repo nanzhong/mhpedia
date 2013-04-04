@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Uncomment to make IE8 render like IE7 -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "MHPedia" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <nav class="top-bar" style="">
+    <ul class="title-area">
+      <li class="name">
+      <h1><a href="/">MHPedia</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+    <ul class="left">
+      <li class="divider"></li>
+      <li class="has-dropdown"><a href="#">Database</a>
+
+      <ul class="dropdown">
+        <li><label>General</label></li>
+        <li><%= link_to 'Items', items_path %></li>
+        <li><a href="#" class="soon">Monsters<sup> soon</sup></a></li>
+        <li><a href="#" class="soon">Combo Recipes<sup> soon</sup></a></li>
+        <li><%= link_to 'Maps', maps_path %></li>
+        <li class="divider"></li>
+        <li><label>Equipment</label></li>
+        <li><a href="#" class="soon">Armors<sup> soon</sup></a></li>
+        <li><a href="#" class="soon">Weappons<sup> soon</sup></a></li>
+        <li><a href="#" class="soon">Decorations<sup> soon</sup></a></li>
+        <li class="divider"></li>
+        <li><label>Skills</label></li>
+        <li><a href="#" class="soon">Armor Skills<sup> soon</sup></a></li>
+        <li><a href="#" class="soon">Felyne Skills<sup> soon</sup></a></li>
+        <li class="divider"></li>
+        <li><label>Quests</label></li>
+        <li><a href="#" class="soon">Village<sup> soon</sup></a></li>
+        <li><a href="#" class="soon">Port<sup> soon</sup></a></li>
+        <li><a href="#" class="soon">Arena<sup> soon</sup></a></li>
+      </ul>
+      </li>
+
+      <li class="divider"></li>
+      <li class="has-dropdown"><a href="#">Tools</a>
+
+      <ul class="dropdown">
+        <li><a href="#" class="soon">Build Simulator<sup> soon</sup></a></li>
+      </ul>
+      </li>
+
+      <li class="divider"></li>
+
+      <!--
+      <li class="has-dropdown"><a href="#">More</a>
+
+      <ul class="dropdown">
+        <li><label>MHPedia</label></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <li>
+      -->
+    </ul>
+
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <% unless params[:controller] == 'search' && params[:action] == 'index' %>
+      <li class="divider"></li>
+      <li class="has-form">
+      <%= form_tag({controller: 'search', action: 'search'}, method: 'get') do %>
+        <div class="row collapse">
+          <div class="small-8 columns">
+            <%= text_field_tag :q %>
+          </div>
+          <div class="small-4 columns">
+            <%= submit_tag "Search", class: 'button prefix' %>
+          </div>
+        </div>
+      <% end %>
+      </li>
+      <% end %>
+    </ul>
+    </section></nav>
+
+    <div class="row">
+      <div class="small-12 small-centered large-8 columns">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

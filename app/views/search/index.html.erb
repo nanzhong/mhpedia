@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="small-12 columns">
+    <h1 style="text-align: center;">MHPedia</h1>
+    <p class="subheader" style="text-align: center;">Your comprehensive guide to all that is Monster Hunter</p>
+    <%= form_tag({controller: 'search', action: 'search'}, method: 'get') do %>
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <%= text_field_tag :q, nil, placeholder: 'Search for items, maps, monsters...', style: 'margin: 0;'%>
+        </div>
+        <div class="small-2 columns">
+          <%= submit_tag "Search", class: 'button prefix', style: 'margin: 0;' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 large-10 large-centered columns" style="text-align: center;">
+    <blockquote>
+      This is a work-in-progress that I am contiually updating and improving. Please bear with me if you encounter any problems.
+      <cite>nan</cite>
+    </blockquote>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 large-8 large-centered columns">
+    <div class="panel" style="font-size: 75%;">
+      <h3>Database statistics:</h3>
+      <div class="row">
+        <div class="small-6 columns"><p>
+          <strong>Items:</strong> <%= @items_count %><br>
+          <strong>Monsters:</strong> 0<br>
+          <strong>Combo Recipes:</strong> 0<br>
+          <strong>Maps:</strong> <%= @maps_count %> maps /w <%= @areas_count %> areas<br>
+          <strong>Resource locations:</strong> <%= @resources_count %><br>
+          </p></div>
+        <div class="small-6 columns"><p>
+          <strong>Armors:</strong> 0<br>
+          <strong>Weapons:</strong> 0<br>
+          <strong>Decorations:</strong> 0<br>
+        </p></div>
+      </div>
+    </div>
+  </div>
+</div>

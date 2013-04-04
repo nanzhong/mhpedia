@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="small-12 columns">
+    <h1><%= @item.name %></h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <div class="panel">
+      <div class="row">
+        <div class="small-12 columns">
+          <%= image_tag @item.img.blank? ? 'http://placehold.it/64' : @item.img, class: 'th icon', style: 'float: left' %>
+          <p>
+          <strong>Rarity:</strong> <%= !@item.rarity.blank? && @item.rarity != 0 ? @item.rarity : "N/A" %><br>
+          <strong>Buy Value:</strong> <%= !@item.buy.blank? && @item.buy != 0 ? "#{@item.buy}z" : "N/A" %><br>
+          <strong>Sell Value:</strong> <%= !@item.sell.blank? && @item.sell != 0 ? "#{@item.sell}z" : "N/A" %>
+        </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 columns">
+          <h5>Description</h5>
+          <p><%= @item.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 large-6 columns">
+    <h2 class="subheader">Gathering</h2>
+    <p>
+    <% if @maps.count == 0 %>
+      Unknown gathering spot
+    <% else %>
+      <table style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Map</th>
+            <th style="width: 55%;">Areas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @maps.each do |map, areas| %>
+            <tr>
+              <td><%= map.name %></td>
+              <td><%= areas.map {|a| a.zone}.join(', ') %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+  <div class="small-12 large-6 columns">
+    <h2 class="subheader">Monsters</h2>
+    <p>Unknown at the moment...</p>
+  </div>
+</div>

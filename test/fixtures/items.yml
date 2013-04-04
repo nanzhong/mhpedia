@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  img: MyString
+  rarity: 1
+  buy: 1
+  sell: 1
+
+two:
+  name: MyString
+  description: MyString
+  img: MyString
+  rarity: 1
+  buy: 1
+  sell: 1

@@ -1,0 +1,29 @@
+<h1>Results for <%= @query %></h1>
+<% if @items.empty? and @maps.empty? %>
+  <h4>Nothing found... :(</h4>
+<% end %>
+
+<% unless @items.empty? %>
+  <h2 class="subheader">Items (<%= @items.count %>)</h2>
+  <ul class="small-block-grid-1 large-block-grid-2">
+    <% @items.each do |item| %>
+      <li>
+      <div class="panel">
+        <%= link_to(image_tag(item.img.blank? ? 'http://placehold.it/18' : item.img, style: 'width: 18px; height: 18px;') + ' ' + item.name, item) %>
+      </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<% unless@maps.empty? %>
+  <h2 class="subheader">Maps (<%= @maps.count %>)</h2>
+  <ul class="small-block-grid-1 large-block-grid-2">
+    <% @maps.each do |map| %>
+      <li>
+      <div class="panel">
+        <%= link_to map.name, map %>
+      </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

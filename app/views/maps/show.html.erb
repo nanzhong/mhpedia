@@ -1,0 +1,40 @@
+<h1><%= @map.name %></h1>
+<div class="row">
+  <div class="small-12 columns">
+    <div data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <% @map.areas.each do |area| %>
+          <dd data-magellan-arrival="<%= area.zone %>"<%= area.zone == 0 ? ' class="active"'.html_safe : ''%>>
+            <% if area.zone == 0 %>
+              <%= link_to 'Base Camp', "##{area.zone}" %>
+            <% elsif area.zone == 1 %>
+              <%= link_to 'Area 1', "##{area.zone}" %>
+            <% else %>
+              <%= link_to area.zone, "##{area.zone}" %>
+            <% end %>
+          </dd>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <% @map.areas.each do |area| %>
+      <a name="<%= area.zone %>">
+        <h2 class="subheader" data-magellan-destination="<%= area.zone %>" style="padding-top: 40px; margin-top: -40px;"><%= area.zone == 0 ? 'Base Camp' : "Area #{area.zone}" %></h2>
+      </a>
+      <ul class="small-block-grid-1 large-block-grid-2">
+        <% area.resources.each do |resource| %>
+          <li>
+          <div class="panel">
+            <%= link_to resource.item.name, resource.item %>
+          </div>
+          </li>
+        <% end %>
+      </ul>
+      </li>
+    <% end %>
+  </div>
+</div>
