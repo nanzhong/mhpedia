@@ -1,7 +1,6 @@
-class Item < ActiveRecord::Base
-  attr_accessible :buy, :description, :img, :name, :rarity, :sell
+class Monster < ActiveRecord::Base
+  attr_accessible :name
 
-  has_many :resources
   has_many :monster_rewards
 
   default_scope order('name ASC')

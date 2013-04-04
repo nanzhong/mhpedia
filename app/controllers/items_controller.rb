@@ -11,5 +11,10 @@ class ItemsController < ApplicationController
       @maps[resource.area.map] ||= []
       @maps[resource.area.map] << resource.area
     end
+    @monsters = []
+    @item.monster_rewards.each do |reward|
+      @monsters << reward.monster
+    end
+    @monsters.uniq!
   end
 end

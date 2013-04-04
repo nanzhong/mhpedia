@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130402180941) do
+ActiveRecord::Schema.define(:version => 20130404165615) do
 
   create_table "areas", :force => true do |t|
     t.integer  "zone"
@@ -32,6 +32,22 @@ ActiveRecord::Schema.define(:version => 20130402180941) do
   end
 
   create_table "maps", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "monster_rewards", :force => true do |t|
+    t.integer  "monster_id"
+    t.integer  "item_id"
+    t.string   "rank"
+    t.string   "action"
+    t.integer  "drop_rate"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "monsters", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

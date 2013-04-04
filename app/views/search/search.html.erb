@@ -15,7 +15,21 @@
     <% end %>
   </ul>
 <% end %>
-<% unless@maps.empty? %>
+
+<% unless @monsters.empty? %>
+  <h2 class="subheader">Monsters (<%= @monsters.count %>)</h2>
+  <ul class="small-block-grid-1 large-block-grid-2">
+    <% @monsters.each do |monster| %>
+      <li>
+      <div class="panel">
+        <%= link_to monster.name, monster %>
+      </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @maps.empty? %>
   <h2 class="subheader">Maps (<%= @maps.count %>)</h2>
   <ul class="small-block-grid-1 large-block-grid-2">
     <% @maps.each do |map| %>

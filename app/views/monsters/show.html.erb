@@ -1,0 +1,39 @@
+<h1><%= @monster.name %></h1>
+<!--
+<div class="row">
+  <div class="small-12 columns">
+    <div data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <% first = true %>
+        <% @rewards.each_key do |action| %>
+          <dd data-magellan-arrival="<%= action %>"<%= first ? ' class="active"'.html_safe : ''%>>
+          <%= link_to action, "##{action}" %>
+          </dd>
+          <% first = false %>
+        <% end %>
+      </dl>
+    </div>
+  </div>
+</div>
+-->
+<div class="row">
+  <div class="small-12 columns">
+    <% @rewards.each do |action, rank_rewards| %>
+      <a name="<%= action %>">
+        <h2 class="subheader" style="padding-top: 40px; margin-top: -40px;"><%= action %></h2>
+      </a>
+      <% rank_rewards.each do |rank, rewards| %>
+        <h4><%= rank %></h4>
+        <ul class="small-block-grid-1 large-block-grid-2">
+          <% rewards.each do |reward| %>
+            <li>
+            <div class="panel">
+              <%= link_to "#{reward.item.name} (#{reward.drop_rate}%)", reward.item %>
+            </div>
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    <% end %>
+  </div>
+</div>

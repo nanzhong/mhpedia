@@ -1,0 +1,12 @@
+analysis:
+  filter:
+    ngram_filter:
+      type: "nGram"
+      min_gram: 2
+      max_gram: 10
+
+  analyzer:
+    ngram_analyzer:
+      tokenizer: "lowercase"
+      filter: ["ngram_filter"]
+      type: "custom"

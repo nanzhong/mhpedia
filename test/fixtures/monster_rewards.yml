@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  monster_id: 1
+  item_id: 1
+
+two:
+  monster_id: 1
+  item_id: 1

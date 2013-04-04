@@ -66,6 +66,58 @@ namespace :mhpedia do
       puts "Loaded maps (#{Map.count} maps in DB)"
     end
 
+    desc 'Load monster reward db'
+    task :monsters => :environment do
+      puts 'Loading initial monster db'
+
+      data = File.readlines("#{Rails.root}/db/data/monsters.tsv")
+      header = data.shift.split("\t").map {|f| f.strip}
+
+      data.each do |reward|
+        reward_data = {}
+        data_fields = reward.split("\t")
+        header.each_with_index do |field, i|
+          reward_data[field] = data_fields[i].strip
+        end
+
+        monsters = Monster.where(name: reward_data['name'])
+        monster = nil
+        if monsters.empty?
+          monster = Monster.new
+          monster.name = reward_data['name']
+          monster.save
+        else
+          monster = monsters.first
+        end
+
+        items = Item.where(name: reward_data['item'])
+
+        item = nil
+        if items.empty?
+          item = Item.new
+          item.name = reward_data['item']
+          item.save
+        else
+          item = items.first
+        end
+
+        if monster.monster_rewards.where(item_id: item.id, rank: reward_data['rank'], action: reward_data['action']).count > 0
+          puts "Skipping #{reward_data.inspect}"
+          next
+        end
+
+        reward = MonsterReward.new
+        reward.item = item
+        reward.monster = monster
+        reward.action = reward_data['action']
+        reward.rank = reward_data['rank']
+        reward.drop_rate = reward_data['drop_rate'].to_i
+        reward.save
+      end
+
+      puts "Loaded resources (#{MonsterReward.count} resources in DB)"
+    end
+
     desc 'Load initial resourced db'
     task :resources => :environment do
       puts 'Loading intial resources DB'
