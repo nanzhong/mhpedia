@@ -10,8 +10,14 @@ class SearchController < ApplicationController
 
   def search
     @query = params[:q]
-    @items = Item.search("name:#{@query}")
-    @maps = Map.search("name:#{@query}")
-    @monsters = Monster.search("name:#{@query}")
+
+    if @query.blank?
+      flash[:error] = "Cannot search with for empty query... :("
+      redirect_to root_path
+    else
+      @items = Item.search("name:#{@query}")
+      @maps = Map.search("name:#{@query}")
+      @monsters = Monster.search("name:#{@query}")
+    end
   end
 end

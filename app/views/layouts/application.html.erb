@@ -82,22 +82,48 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <% unless params[:controller] == 'search' && params[:action] == 'index' %>
-      <li class="divider"></li>
-      <li class="has-form">
-      <%= form_tag({controller: 'search', action: 'search'}, method: 'get') do %>
-        <div class="row collapse">
-          <div class="small-8 columns">
-            <%= text_field_tag :q %>
+        <li class="divider"></li>
+        <li class="has-form">
+        <%= form_tag({controller: 'search', action: 'search'}, method: 'get') do %>
+          <div class="row collapse">
+            <div class="small-8 columns">
+              <%= text_field_tag :q %>
+            </div>
+            <div class="small-4 columns">
+              <%= submit_tag "Search", class: 'button prefix' %>
+            </div>
           </div>
-          <div class="small-4 columns">
-            <%= submit_tag "Search", class: 'button prefix' %>
-          </div>
-        </div>
-      <% end %>
-      </li>
+        <% end %>
+        </li>
       <% end %>
     </ul>
     </section></nav>
+
+    <div id="flashbox" class="row">
+      <div class="small-12 columns">
+        <% if flash[:notice] %>
+          <div data-alert class="alert-box success">
+            <%= flash[:notice] %>
+            <a href="" class="close">&times;</a>
+          </div>
+        <% end %>
+
+        <% if flash[:error] %>
+          <div data-alert class="alert-box alert">
+            <%= flash[:error] %>
+            <a href="" class="close">&times;</a>
+          </div>
+        <% end %>
+
+        <% if flash[:alert] %>
+          <div data-alert class="alert-box">
+            <%= flash[:alert] %>
+            <a href="" class="close">&times;</a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
 
     <div class="row">
       <div class="small-12 small-centered large-8 columns">
