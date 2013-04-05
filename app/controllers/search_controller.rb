@@ -19,6 +19,10 @@ class SearchController < ApplicationController
       @items = Item.search("name:#{@query}")
       @maps = Map.search("name:#{@query}")
       @monsters = Monster.search("name:#{@query}")
+
+      @items = @items.reject {|i| i._score < 0.65}
+      @monsters = @monsters.reject {|m| m._score < 0.65}
+      @maps = @maps.reject {|m| m._score < 0.65}
     end
   end
 end
