@@ -3,7 +3,7 @@
   <div class="small-12 columns">
     <div data-magellan-expedition="fixed">
       <dl class="sub-nav">
-        <% @map.areas.each do |area| %>
+        <% @areas.each do |area| %>
           <dd data-magellan-arrival="<%= area.zone %>"<%= area.zone == 0 ? ' class="active"'.html_safe : ''%>>
             <% if area.zone == 0 %>
               <%= link_to 'Base Camp', "##{area.zone}" %>
@@ -21,7 +21,7 @@
 
 <div class="row">
   <div class="small-12 columns">
-    <% @map.areas.sort {|a,b| a.zone <=> b.zone}.each do |area| %>
+    <% @areas.each do |area| %>
       <a name="<%= area.zone %>">
         <h2 class="subheader" data-magellan-destination="<%= area.zone %>" style="padding-top: 40px; margin-top: -40px;"><%= area.zone == 0 ? 'Base Camp' : "Area #{area.zone}" %></h2>
       </a>
