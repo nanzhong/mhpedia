@@ -1,0 +1,175 @@
+item	part_1	part_2	success_rate	products_min	products_max
+Potion	Herb	Blue Mushroom	95	1	1
+Mega Potion	Potion	Honey	90	1	1
+Nutrients	Blue Mushroom	Godbug	90	1	1
+Mega Nutrients	Nutrients	Honey	75	1	1
+Antidote	Antidote Herb	Blue Mushroom	95	1	1
+Herbal Medicine	Cactus Flower	Bitterbug	90	1	1
+Max Potion	Mega Nutrients	Dragon Toadstool	65	1	1
+Ancient Potion	Immunizer	Kelbi Horn	55	1	1
+Oxygen Supply	Bomb Casing	Airweed	90	1	1
+Air Philter	Catalyst	Airweed	75	1	1
+Immunizer	Catalyst	Dragon Toadstool	75	1	1
+Cleanser	Catalyst	Popfish	90	1	1
+Cleanser	Hot Pepper	Burst Arowana	75	1	3
+Dash Juice	Catalyst	Rare Steak	75	1	1
+Mega Dash Juice	Well-Done Steak	Dash Extract	65	1	1
+Energy Drink	Honey	Nitroshroom	65	1	1
+Energy Drink	Hot Pepper	Sleepyfish	75	1	1
+Demondrug	Catalyst	Might Seed	65	1	1
+Mega Demondrug	Demondrug	Pale Extract	55	1	1
+Might Pill	Immunizer	Might Seed	75	1	1
+Armorskin	Catalyst	Adamant Seed	65	1	1
+Mega Armorskin	Armorskin	Pale Extract	55	1	1
+Adamant Pill	Immunizer	Adamant Seed	75	1	1
+Hot Drink	Hot Pepper	Bitterbug	90	1	1
+Hot Meat	Well-Done Steak	Hot Pepper	95	1	1
+Cool Drink	Ice Crystal	Bitterbug	90	1	1
+Chilled Meat	Well-Done Steak	Ice Crystal	95	1	1
+Poisoned Meat	Raw Meat	Toadstool	90	1	1
+Tinged Meat	Raw Meat	Parashroom	90	1	1
+Drugged Meat	Raw Meat	Sleep Herb	90	1	1
+Bomb Casing	Sap Plant	Stone	95	1	1
+Bomb Casing	Sap Plant	Iron Ore	95	1	2
+Deodorant	Bomb Casing	Bitterbug	95	1	1
+Smoke Bomb	Bomb Casing	Ivy	75	1	1
+Poison Smoke Bomb	Bomb Casing	Toadstool	75	1	1
+Poison Smoke Bomb	Bomb Casing	Poison Sac	90	1	3
+Flash Bomb	Bomb Casing	Flashbug	75	1	1
+Dung Bomb	Bomb Casing	Dung	75	1	1
+Dung Bomb	Dung	Bomb Sac	75	1	2
+Paintball	Sap Plant	Paintberry	95	1	1
+Farcaster	Bomb Casing	Exciteshroom	95	1	1
+Gunpowder	Fire Herb	Nitroshroom	95	1	1
+Barrel Bomb S	Small Barrel	Fire Herb	90	1	1
+Barrel Bomb S+	Barrel Bomb S	Burst Arowana	75	1	1
+Barrel Bomb L	Gunpowder	Large Barrel	75	1	1
+Barrel Bomb L+	Barrel Bomb L	Scatterfish	55	1	1
+Bounce Bomb	Barrel Bomb S	Bnahabra Wing	55	1	1
+Bounce Bomb+	Bounce Bomb	Bomb Arowana	55	1	1
+Sonic Bomb	Gunpowder	Screamer	75	1	1
+Felvine Bomb	Barrel Bomb S	Felvine	90	1	1
+Net	Spider Web	Ivy	90	1	1
+Pitfall Trap	Net	Trap Tool	65	1	1
+Shock Trap	Trap Tool	Thunderbug	90	1	1
+Tuna Bait	Worm	Yambug	95	1	1
+Burst Bait	Mega Fishing Fly	Stinkhopper	90	1	1
+Goldenfish Bait	Mega Fishing Fly	Snakebee Larva	90	1	1
+Sushifish Bait	Mega Fishing Fly	Yambug	95	1	2
+Whetfish Bait	Mega Fishing Fly	Bughopper	90	1	2
+Old Pickaxe	Stone	Bone	95	1	1
+Old Pickaxe	Stone	Mystery Bone	75	1	1
+Iron Pickaxe	Iron Ore	Bone	75	1	1
+Mega Pickaxe	Machalite Ore	Bone	95	1	1
+Old Bug Net	Net	Mystery Bone	95	1	1
+Bug Net	Net	Monster Bone S	75	1	1
+Mega Bug Net	Net	Monster Bone M	95	1	1
+Fishing Harpoon	Broken Shell	Mystery Bone	95	1	1
+Antiseptic Stone	Earth Crystal	Bitterbug	75	1	1
+Lifecrystals	Godbug	Wyvern Fang	90	1	1
+Lifepowder	Lifecrystals	Wyvern Claw	65	1	1
+Dust of Life	Lifepowder	Gloamgrass Bug	55	1	1
+Health Horn	Lifecrystals	Field Horn	65	1	1
+Antidote Horn	Field Horn	Antiseptic Stone	65	1	1
+Demon Horn	Mega Demondrug	Monster Bone M	55	1	1
+Armor Horn	Mega Armorskin	Monster Bone M	55	1	1
+Poison Knife	Throwing Knife	Toadstool	65	1	1
+Sleep Knife	Throwing Knife	Sleep Herb	65	1	1
+Paralysis Knife	Throwing Knife	Parashroom	65	1	1
+Boomerang	Whetstone	Monster Bone S	75	1	1
+Powertalon	Powercharm	Deviljho Talon	95	1	1
+Armortalon	Armorcharm	Deviljho Talon	95	1	1
+Normal S LV2	Huskberry	Needleberry	95	2	4
+Normal S LV3	Huskberry	Popfish	95	2	4
+Pierce S LV1	Huskberry	Bird Wyvern Fang	90	1	3
+Pierce S LV2	Huskberry	Pin Tuna	75	1	3
+Pierce S LV3	Bone Husk S	Pin Tuna	75	1	2
+Pellet S LV1	Huskberry	Scatternut	90	1	3
+Pellet S LV2	Huskberry	Wyvern Fang	75	1	3
+Pellet S LV3	Bone Husk S	Wyvern Fang	75	1	3
+Crag S LV1	Huskberry	Burst Arowana	90	1	1
+Crag S LV2	Bone Husk S	Burst Arowana	90	1	1
+Grag S LV3	Bone Husk L	Scatterfish	75	1	1
+Clust S LV1	Huskberry	Bomberry	90	1	1
+Clust S LV2	Bone Husk S	Wyvern Claw	75	1	1
+Clust S LV3	Bone Husk L	Scatterfish	75	1	1
+Faming S	Huskberry	Fire Herb	90	1	1
+Water S	Huskberry	Whetfish	75	1	3
+Freeze S	Huskberry	Ice Crystal	75	1	3
+Thunder S	Huskberry	Flashbug	75	2	4
+Dragon S	Bone Husk L	Dragonfell Berry	75	1	1
+Recov S LV1	Huskberry	Herb	90	1	1
+Recov S LV2	Potion	Huskberry	90	1	1
+Poison S LV1	Huskberry	Toadstool	100	1	1
+Poison S LV2	Bone Husk S	Toadstool	75	1	1
+Para S LV1	Huskberry	Parashroom	90	1	1
+Para S LV2	Bone Husk S	Parashroom	90	1	1
+Sleep S LV1	Huskberry	Sleep Herb	90	1	1
+Sleep S LV2	Bone Husk S	Sleepyfish	75	1	1
+Paint S	Huskberry	Paintberry	90	1	1
+Demon S	Bone Husk L	Might Seed	75	1	1
+Armor S	Bone Husk L	Adamant Seed	75	1	1
+Sub S LV1	Huskberry	Sharpened Fang	75	1	3
+Sub S LV2	Bone Husk S	Sharpened Fang	65	1	3
+Exhaust S LV1	Dung	Huskberry	75	1	1
+Exhaust S LV2	Bone Husk S	Wanchovy	75	1	1
+Slicing S	Bone Husk S	Whetfish	75	1	3
+Wyvernfire	Bone Husk L	Burst Arowana	65	1	1
+Slime S	Huskberry	Bomb Arowana	65	1	3
+Tranquilizer	Sleep Herb	Parashroom	65	1	1
+Tranq Knife	Tranquilizer	Throwing Knife	65	1	1
+Tranq Bomb	Tranquilizer	Bomb Casing	75	1	1
+Tranq S	Tranquilizer	Bone Husk S	90	1	1
+Empty Phial	Bone Husk S	Whetstone	90	1	1
+Poison Coating	Empty Phial	Toadstool	90	1	1
+Para Coating	Empty Phial	Parashroom	90	1	1
+Sleep Coating	Empty Phial	Sleep Herb	90	1	1
+Power Coating	Empty Phial	Nitroshroom	90	1	1
+C.Range Coating	Empty Phial	Whetfish	90	1	1
+Paint Coating	Empty Phial	Paintberry	90	1	1
+Exhaut Coating	Empty Phial	Wanchovy	90	1	1
+Slime Coating	Empty Phial	Bomb Arowana	90	1	3
+Armor Sphere	Machalite Ore	Armor Stone	95	1	1
+Armor Sphere	Armor Stone	Killer Beetle	95	1	1
+Armor Sphere+	Dragonite Ore	Armor Stone	95	1	1
+Armor Sphere+	Armor Stone	Rare Scarab	95	1	1
+Adv Armor Sphere	Carbalite Ore	Armor Stone	95	1	1
+Adv Armor Sphere	Firestone	Armor Stone	95	1	1
+Hrd Armor Sphere	Gracium	Armor Stone	95	1	1
+Hrd Armor Sphere	Armor Stone	King Scarab	95	1	1
+Hvy Armor Sphere	Etalite Ore	Armor Stone	95	1	1
+Hvy Armor Sphere	Armor Stone	Emperor Hopper	95	1	1
+Tru Armor Sphere	Meldspar Ore	Armor Stone	95	1	1
+Tru Armor Sphere	Armor Stone	Flutterly	95	1	1
+Dazzling Crown	Incomplete Crown	Crown's Gemstone	100	1	1
+Iron Ore	Iron Ore	Slickaxe	100	5	5
+Earth Crystal	Earth Crystal	Slickaxe	100	5	5
+Machalite Ore	Machalite Ore	Slickaxe	100	3	3
+Dragonite Ore	Dragonite Ore	Slickaxe	100	3	3
+Carbalite Ore	Carbalite Ore	Slickaxe	100	2	2
+Etalite Ore	Etalite Ore	Slickaxe	100	2	2
+Fucium Ore	Fucium Ore	Slickaxe	100	2	2
+Meldspar Ore	Meldspar Ore	Slickaxe	100	2	2
+Pelagicite Ore	Pelagicite Ore	Slickaxe	100	3	3
+Bathycite Ore	Bathycite Ore	Slickaxe	100	2	2
+Firestone	Firestone	Slickaxe	100	2	2
+Firecell Stone	Firecell Stone	Slickaxe	100	2	2
+Allfire Stone	Allfire Stone	Slickaxe	100	2	2
+Lightcrystal	Lightcrystal	Slickaxe	100	2	2
+Purecrystal	Purecrystal	Slickaxe	100	2	2
+Monster Bone+	Monster Bone+	Slickaxe	100	5	5
+Monster Keenbone	Monster Keenbone	Slickaxe	100	2	2
+Monster Hardbone	Monster Hardbone	Slickaxe	100	2	2
+Monster Slogbone	Monster Slogbone	Slickaxe	100	2	2
+Carpenterbug	Carpenterbug	Slickaxe	100	5	5
+Killer Beetle	Killer Beetle	Slickaxe	100	3	3
+Hercudrome	Hercudrome	Slickaxe	100	3	3
+Rare Scarab	Rare Scarab	Slickaxe	100	2	2
+King Scarab	King Scarab	Slickaxe	100	2	2
+Emperor Hopper	Emperor Hopper	Slickaxe	100	2	2
+Flutterfly	Flutterfly	Slickaxe	100	2	2
+Dragonbone Relic	Dragonbone Relic	Slickaxe	100	2	2
+Elder Dragonbone	Elder Dragonbone	Slickaxe	100	2	2
+Crested Crown	Incomplete Crown	Royal Crest	100	2	2
+Reamless Crown	Dazzling Crown	Royal Crest	100	1	1
+Reamless Crown	Crown's Gemstone	Crested Crown	100	1	1

@@ -1,0 +1,27 @@
+<h1>Combo List</h1>
+<div class="row">
+  <div class="small-12 columns">
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Ingredient 1</th>
+          <th>Ingredient 2</th>
+          <th>Succes Rate</th>
+          <th># Products</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @combos.each do |combo| %>
+          <tr>
+            <td><%= link_to combo.item.name, combo.item %></td>
+            <td><%= link_to combo.part_1.name, combo.part_1 %></td>
+            <td><%= link_to combo.part_2.name, combo.part_2 %></td>
+            <td><%= combo.success_rate %>%</td>
+            <td><%= combo.min == combo.max ? combo.min : "#{combo.min}-#{combo.max}" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

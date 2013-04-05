@@ -27,6 +27,25 @@
   </div>
 </div>
 
+<% unless @item.combo.blank? %>
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 class="subheader">Ingredients</h2>
+      <div class="row">
+        <div class="small-12 large-5 columns">
+          <div class="panel"><%= link_to @item.combo.part_1.name, @item.combo.part_1 %></div>
+        </div>
+        <div class="large-2 columns show-for-medium-up" style="text-align: center;">
+          <div class="panel"><span style="font-weight: bold">+</span></div>
+        </div>
+        <div class="small-12 large-5 columns">
+          <div class="panel"><%= link_to @item.combo.part_2.name, @item.combo.part_2 %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
 <% unless @maps.empty? %>
   <div class="row">
     <div class="small-12 columns">

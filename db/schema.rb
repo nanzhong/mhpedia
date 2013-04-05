@@ -11,13 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404165615) do
+ActiveRecord::Schema.define(:version => 20130405004904) do
 
   create_table "areas", :force => true do |t|
     t.integer  "zone"
     t.integer  "map_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "combos", :force => true do |t|
+    t.integer  "item_id"
+    t.integer  "part_1_id"
+    t.integer  "part_2_id"
+    t.integer  "success_rate"
+    t.integer  "min"
+    t.integer  "max"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "items", :force => true do |t|

@@ -9,6 +9,7 @@ MHPedia::Application.routes.draw do
   resources :items, only: [:index, :show]
   resources :maps, only: [:index, :show]
   resources :monsters, only: [:index, :show]
+  resources :combos, only: [:index]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

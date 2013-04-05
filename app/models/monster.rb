@@ -1,7 +1,7 @@
 class Monster < ActiveRecord::Base
   attr_accessible :name
 
-  has_many :monster_rewards
+  has_many :monster_rewards, inverse_of: :monster
 
   default_scope order('name ASC')
 

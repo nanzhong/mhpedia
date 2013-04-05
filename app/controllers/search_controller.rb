@@ -6,6 +6,7 @@ class SearchController < ApplicationController
     @maps_count = Map.count
     @areas_count = Area.count
     @resources_count = Resource.count
+    @combos_count = Combo.count
   end
 
   def search

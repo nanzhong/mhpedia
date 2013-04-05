@@ -35,6 +35,67 @@ namespace :mhpedia do
       puts "Loaded #{updated} items"
     end
 
+    desc 'Load initial combos DB'
+    task :combos => :environment do
+      puts 'Loading initial combos DB'
+
+      data = File.readlines("#{Rails.root}/db/data/combos.tsv")
+      header = data.shift.split("\t").map {|f| f.strip}
+
+      updated = 0
+
+      data.each do |item|
+        item_data = {}
+        data_fields = item.split("\t")
+        header.each_with_index do |field, i|
+          item_data[field] = data_fields[i].strip
+        end
+
+        items = Item.where(name: item_data['item'])
+        item = nil
+        if items.count != 1
+          item = Item.new
+          item.name = item_data['item']
+          item.save
+        else
+          item = items.first
+        end
+
+        items = Item.where(name: item_data['part_1'])
+        part_1 = nil
+        if items.count != 1
+          part_1 = Item.new
+          part_1.name = item_data['part_1']
+          part_1.save
+        else
+          part_1 = items.first
+        end
+
+        items = Item.where(name: item_data['part_2'])
+        part_2 = nil
+        if items.count != 1
+          part_2 = Item.new
+          part_2.name = item_data['part_2']
+          part_2.save
+        else
+          part_2 = items.first
+        end
+
+        combo = Combo.new
+        combo.item = item
+        combo.part_1 = part_1
+        combo.part_2 = part_2
+        combo.max = item_data['products_max']
+        combo.min = item_data['products_min']
+        combo.success_rate = item_data['success_rate']
+
+        combo.save
+        updated += 1
+      end
+
+      puts "Loaded #{updated} Combo Recipes"
+    end
+
     desc 'Load map data'
     task :maps => :environment do
       puts 'Loading map data'
