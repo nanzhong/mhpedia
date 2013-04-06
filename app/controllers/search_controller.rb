@@ -16,9 +16,9 @@ class SearchController < ApplicationController
       flash[:error] = "Cannot search with for empty query... :("
       redirect_to root_path
     else
-      @items = Item.search("name:#{@query}")
-      @maps = Map.search("name:#{@query}")
-      @monsters = Monster.search("name:#{@query}")
+      @items = Item.search("name:#{@query}", per_page: 100)
+      @maps = Map.search("name:#{@query}", per_page: 100)
+      @monsters = Monster.search("name:#{@query}", per_page: 100)
 
       @items = @items.reject {|i| i._score < 0.65}
       @monsters = @monsters.reject {|m| m._score < 0.65}
