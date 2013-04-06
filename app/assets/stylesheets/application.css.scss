@@ -10,9 +10,30 @@
  *
  *= require_self
  *= require_tree .
- *= require foundation_and_overrides
  */
+
+@import 'foundation';
+@import 'foundation-icons';
 
 .top-bar-section .dropdown li a.soon {
   color: #666;
+}
+
+.top-bar form.search-box input {
+  height: 2.15em;
+  line-height: normal;
+}
+
+.top-bar form.search-box button {
+  height: 2.15em;
+  line-height: normal;
+}
+
+
+
+input.search-form-icon {
+  background-image: url('/img/search.gif');
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 20px;
 }

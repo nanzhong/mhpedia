@@ -84,13 +84,13 @@
       <% unless params[:controller] == 'search' && params[:action] == 'index' %>
         <li class="divider"></li>
         <li class="has-form">
-        <%= form_tag({controller: 'search', action: 'search'}, method: 'get') do %>
+        <%= form_tag({controller: 'search', action: 'search'}, method: 'get', class: 'search-box') do %>
           <div class="row collapse">
-            <div class="small-8 columns">
+            <div class="small-10 columns">
               <%= text_field_tag :q %>
             </div>
-            <div class="small-4 columns">
-              <%= submit_tag "Search", class: 'button prefix' %>
+            <div class="small-2 columns">
+              <%= button_tag '<i class="general foundicon-search"></i>'.html_safe, class: 'button postfix' %>
             </div>
           </div>
         <% end %>

@@ -4,11 +4,11 @@
     <p class="subheader" style="text-align: center;">Your comprehensive guide to all that is Monster Hunter</p>
     <%= form_tag({controller: 'search', action: 'search'}, method: 'get') do %>
       <div class="row collapse">
-        <div class="small-10 columns">
-          <%= text_field_tag :q, nil, placeholder: 'Search for items, maps, monsters...', style: 'margin: 0;'%>
+        <div class="small-11 columns">
+          <%= text_field_tag :q, nil, placeholder: 'Search for items, maps, monsters...', style: 'margin: 0;' %>
         </div>
-        <div class="small-2 columns">
-          <%= submit_tag "Search", class: 'button prefix', style: 'margin: 0;' %>
+        <div class="small-1 columns">
+          <%= button_tag '<i class="general foundicon-search"></i>'.html_safe, class: 'button postfix', style: 'margin: 0;' %>
         </div>
       </div>
     <% end %>
