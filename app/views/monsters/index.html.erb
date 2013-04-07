@@ -9,9 +9,7 @@
     <ul class="small-block-grid-1 large-block-grid-2">
       <% @monsters.each do |monster| %>
         <li>
-        <div class="panel">
-          <%= link_to monster.name, monster %>
-        </div>
+        <%= link_to "<div class=\"panel\">#{monster.name}</div>".html_safe, monster %>
         </li>
       <% end %>
     </ul>

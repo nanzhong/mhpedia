@@ -9,9 +9,7 @@
     <ul class="small-block-grid-1 large-block-grid-2">
       <% @items.each do |item| %>
         <li>
-        <div class="panel">
-          <%= link_to(image_tag(item.img.blank? ? 'http://placehold.it/18' : item.img, style: 'width: 18px; height: 18px;') + ' ' + item.name, item) %>
-        </div>
+        <%= link_to(('<div class="panel">' + image_tag(item.img.blank? ? 'http://placehold.it/18' : item.img, style: 'width: 18px; height: 18px;') + ' ' + item.name + '</div>').html_safe, item) %>
         </li>
       <% end %>
     </ul>

@@ -1,3 +1,6 @@
+<% content_for(:title) { @map.name } %>
+<% content_for(:meta_keywords) { [@map.name, "Monster hunter #{@map.name}"].join(', ') } %>
+
 <h1><%= @map.name %></h1>
 <div class="row" style="position: relative; z-index: 1;">
   <div class="small-12 columns">
@@ -28,9 +31,7 @@
       <ul class="small-block-grid-1 large-block-grid-2">
         <% area.resources.each do |resource| %>
           <li>
-          <div class="panel">
-            <%= link_to resource.item.name, resource.item %>
-          </div>
+            <%= link_to ('<div class="panel">' + resource.item.name + '</div>').html_safe, resource.item %>
           </li>
         <% end %>
       </ul>

@@ -4,9 +4,7 @@
     <ul class="small-block-grid-1 large-block-grid-2">
       <% @maps.each do |map| %>
         <li>
-        <div class="panel">
-          <%= link_to map.name, map  %>
-        </div>
+          <%= link_to "<div class=\"panel\">#{map.name}</div>".html_safe, map  %>
         </li>
       <% end %>
     </ul>

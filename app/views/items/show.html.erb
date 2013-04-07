@@ -1,3 +1,6 @@
+<% content_for(:title) { @item.name } %>
+<% content_for(:meta_keywords) { [@item.name, "Where do I get #{@item.name}", "Where can I find #{@item.name}", "Monster hunter #{@item.name}"].join(', ') } %>
+
 <div class="row">
   <div class="small-12 columns">
     <h1><%= @item.name %></h1>
@@ -33,13 +36,13 @@
       <h2 class="subheader">Ingredients</h2>
       <div class="row">
         <div class="small-12 large-5 columns">
-          <div class="panel"><%= link_to @item.combo.part_1.name, @item.combo.part_1 %></div>
+          <%= link_to(('<div class="panel">' + image_tag(@item.combo.part_1.img.blank? ? 'http://placehold.it/18' : @item.combo.part_1.img, style: 'width: 18px; height: 18px;') + ' ' + @item.combo.part_1.name + '</div>').html_safe, @item.combo.part_1) %>
         </div>
         <div class="large-2 columns show-for-medium-up" style="text-align: center;">
           <div class="panel"><span style="font-weight: bold">+</span></div>
         </div>
         <div class="small-12 large-5 columns">
-          <div class="panel"><%= link_to @item.combo.part_2.name, @item.combo.part_2 %></div>
+          <%= link_to(('<div class="panel">' + image_tag(@item.combo.part_2.img.blank? ? 'http://placehold.it/18' : @item.combo.part_2.img, style: 'width: 18px; height: 18px;') + ' ' + @item.combo.part_2.name + '</div>').html_safe, @item.combo.part_2) %>
         </div>
       </div>
     </div>
