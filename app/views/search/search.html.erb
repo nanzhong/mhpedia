@@ -1,6 +1,6 @@
 <h1>Results for <%= @query %></h1>
 <blockquote>I've added "fuzzy matching" search in hopes of returning more useful results, unfortunately, it still needs tweaking, please bear with me and the irrelevant results.<cite>nan</cite></blockquote>
-<% if @items.empty? and @maps.empty? %>
+<% if @items.empty? && @maps.empty? && @monsters.empty? && @skills.empty? && @skill_effects.empty? %>
   <h4>Nothing found... :(</h4>
 <% end %>
 
