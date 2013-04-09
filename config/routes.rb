@@ -1,15 +1,9 @@
 MHPedia::Application.routes.draw do
-  get "skills/armor"
-
-  get "skills/felyne"
-
-  get "skills/show"
-
   root to: 'search#index'
 
   get 'search/index'
   get 'search/search'
-  get "more/about"
+  get "more/about", as: :about
   get "more/faq"
 
   resources :items, only: [:index, :show]
