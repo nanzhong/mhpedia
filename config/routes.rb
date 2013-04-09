@@ -1,4 +1,10 @@
 MHPedia::Application.routes.draw do
+  get "skills/armor"
+
+  get "skills/felyne"
+
+  get "skills/show"
+
   root to: 'search#index'
 
   get 'search/index'
@@ -10,6 +16,12 @@ MHPedia::Application.routes.draw do
   resources :maps, only: [:index, :show]
   resources :monsters, only: [:index, :show]
   resources :combos, only: [:index]
+  resources :skills, only: [:show] do
+    collection do
+      get 'felyne'
+      get 'armor'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

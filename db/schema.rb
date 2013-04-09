@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130405004904) do
+ActiveRecord::Schema.define(:version => 20130408143416) do
 
   create_table "areas", :force => true do |t|
     t.integer  "zone"
@@ -69,6 +69,23 @@ ActiveRecord::Schema.define(:version => 20130405004904) do
     t.integer  "item_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "skill_effects", :force => true do |t|
+    t.integer  "skill_id"
+    t.string   "name"
+    t.integer  "points"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "skills", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "skill_type"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

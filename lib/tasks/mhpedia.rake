@@ -96,6 +96,68 @@ namespace :mhpedia do
       puts "Loaded #{updated} Combo Recipes"
     end
 
+    desc 'Load skill data'
+    task :skills => :environment do
+      puts 'Loading armor skill data'
+
+      data = File.readlines("#{Rails.root}/db/data/skills.tsv")
+      header = data.shift.split("\t").map {|f| f.strip}
+      data.each do |map|
+        skill_data = {}
+        data_fields = map.split("\t")
+        header.each_with_index do |field, i|
+          skill_data[field] = data_fields[i].strip
+        end
+
+        skills = Skill.where(name: skill_data['name'])
+        if skills.empty?
+          skill = Skill.new
+        else
+          skill = skills.first
+        end
+        skill.name = skill_data['name']
+        skill.description = skill_data['description']
+        skill.skill_type = Skill::Type::ARMOR
+        skill.save
+
+        effects = SkillEffect.where(name: skill_data['effect_name'])
+        if effects.empty?
+          effect = SkillEffect.new
+        else
+          effect = effects.first
+        end
+        effect.name = skill_data['effect_name']
+        effect.description = skill_data['description']
+        effect.points = skill_data['points'].to_i
+        effect.skill = skill
+        effect.save
+      end
+
+      data = File.readlines("#{Rails.root}/db/data/felyne.tsv")
+      header = data.shift.split("\t").map {|f| f.strip}
+      data.each do |map|
+        skill_data = {}
+        data_fields = map.split("\t")
+        header.each_with_index do |field, i|
+          skill_data[field] = data_fields[i].strip
+        end
+
+        skills = Skill.where(name: skill_data['name'])
+        if skills.empty?
+          skill = Skill.new
+        else
+          skill = skills.first
+        end
+        skill.name = skill_data['name']
+        skill.description = skill_data['description']
+        skill.skill_type = Skill::Type::FELYNE
+        skill.save
+      end
+
+      puts "Loaded skills (#{Skill.count} skills #{SkillEffect.count} effects in DB)"
+    end
+
+
     desc 'Load map data'
     task :maps => :environment do
       puts 'Loading map data'

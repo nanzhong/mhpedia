@@ -1,0 +1,238 @@
+name	points	effect_name	description
+Poison	10	Negate Poison	Negate poison status effect.
+Poison	-10	Double Poison	Poison status lasts twice as long.
+Paralysis	10	Negate Paralysis	Negate paralysis status effect.
+Paralysis	-10	Double Paralysis	Paralysis lasts twice as long.
+Sleep	10	Negate Sleep	Negate sleep status effect.
+Sleep	-10	Double Sleep	Sleep lasts twice as long.
+Stun	10	Halve Stun	Takes twice as many attacks to stun.
+Stun	15	Negate Stun	Negate stun status effect.
+Stun	-10	Double Stun	Stun occurs twice as fast and is twice as difficult to shake out of.
+Mud/Snow	10	Negate Mud/Snow	Negate mud/snow negative status effect.
+Antiseptic	10	Antiseptic	Allows you to use any item while under stench effect.
+Def Lock	10	Iron Skin	Items that decrease defense will be ineffective.
+Dungmaster	10	Dung Bomb Expert	Increases dung bomb efficacy and combination success rate.
+Biology	10	Bio Master	"Increases dung bomb efficacy and combination success rate, negates slimeblight and prevents stench."
+Attack	10	Attack Up (S)	Slightly increases attack.
+Attack	15	Attack Up (M)	Increases attack.
+Attack	20	Attack Up (L)	Significantly increases attack.
+Attack	-10	Attack Down (S)	Slightly decreases attack.
+Attack	-15	Attack Down (M)	Decreases attack.
+Attack	-20	Attack Down (L)	Significantly decreases attack.
+Defense	10	Defense Up (S)	Increases defense by 15.
+Defense	15	Defense Up (M)	Increases defense by 3% and a further 20.
+Defense	20	Defense Up (L)	Increases defense by 7% and a further 25.
+Defense	-10	Defense Down (S)	Defense is decreased by 10; cannot decrease defense lower than 1.
+Defense	-15	Defense Down (M)	Defense is decreased by 5% and a minimum 10; cannot decrease defense lower than 1.
+Defense	-20	Defense Down (L)	Defense is decreased by 10% and a minimum 10; cannot decrease defense lower than 1.
+Health	10	Health +20	Increase health permanently by 20.
+Health	15	Health +50	Increase health permanently by 50.
+Health	-10	Health -10	Decrease health permanently by 10.
+Health	-15	Health -30	Decrease health permanently by 30.
+Rec Speed	10	Recovery Spd +1	Red life recovery speed increased to twice normal speed.
+Rec Speed	15	Recovery Spd +2	Red life recovery speed increased to four times normal speed.
+Rec Speed	-10	Recovery Spd -1	Red life recovery speed decreased to half normal speed.
+Rec Speed	-15	Recovery Spd -2	Red life recovery speed decreased to 25% normal speed.
+Protection	10	Divine Blessing	Attacks deal 30% less damage 25% of the time.
+Protection	-10	Demonic Blessing	Attacks deal 30% more damage 25% of the time.
+Sheating	10	Quick Sheath	Sheath weapon faster than normal.
+Fastcharge	10	Focus	"L. Sword, D. Blade, and S. Axe gauges charge 20% faster while G. Sword, Bow, and Hammer charging time decreased by 20%."
+Fastcharge	-10	Distraction	"L. Sword, D. Blade, and S. Axe gauges charge 20% slower while G. Sword, Bow, and Hammer charging time increased by 20%."
+Expert	10	Critical Eye +1	Affinity increased by 10%.
+Expert	15	Critical Eye +2	Affinity increased by 20%.
+Expert	20	Critical Eye +3	Affinity increased by 30%.
+Expert	-10	Critical Eye -1	Affinity decreased by 5%.
+Expert	-15	Critical Eye -2	Affinity decreased by 10%.
+Expert	-20	Critical Eye -3	Affinity decreased by 15%.
+Tenderizer	10	Weakness Exploit	"When attacking a monster part with defense higher than 45, damage is increased by 5%."
+Destroyer	10	Partbreaker	Attacks decrease monster part durability 30% faster.
+KO	10	Knockout King	Dizzy damage is increazed by 10%.
+Stam Drain	10	Stamina Thief	Fatigue damage is increased by 20%.
+Constitutn	10	Constitution +1	"Stamina consumption when evading, blocking, and using Switch Axe is decreased by 25%."
+Constitutn	15	Constitution +2	"Stamina consumption when evading, blocking, and using Switch Axe is decreased by 50%."
+Constitutn	-10	Constitution -1	"Stamina consumption when evading, blocking, and using Switch Axe is increased by 20%."
+Constitutn	-15	Constitution -2	"Stamina consumption when evading, blocking, and using Switch Axe is increased by 35%."
+Hearing	10	Earplugs	Negates the effects of some large monsters' roars.
+Hearing	15	HG Earplugs	Negates the effects of all large monsters' roars.
+Wind Res	10	Windproof (Lo)	Negates small amounts of wind pressure.
+Wind Res	15	Windproog (Hi)	Negates almost all wind pressure.
+Tremor Res	10	Tremor Resistance	Prevents staggering from tremors created by large monsters.
+Heat Res	10	Heat Cancel	Damage caused by heat and lava terrain is negated.
+Heat Res	-10	Heat Surge	Damage caused by heat and lava terrain in doubled.
+Cold Res	10	Cold Cancel	Stamina drain caused by cold is negated.
+Cold Res	-10	Cold Surge	Stamina drain caused by cold is doubled.
+Stamina	10	Marathon Runner	Stamina depletion for actions that continuously drain stamina is decreased by 50%.
+Stamina	-10	Short Sprinter	Stamina depletion for actions that continuously drain stamina is increased by 20%.
+Stam Recov	10	Stam Recov Up	Stamina recovers twice as fast.
+Stam Recov	-10	Stam Recov Down	Stamina recovers 25% slower.
+Evasion	10	Evasion +1	Increases invulnerability during evasive moves from 0.2 seconds to 0.33 seconds.
+Evasion	15	Evasion +2	Increases invulnerability during evasive moves from 0.2 seconds to 0.4 seconds.
+Evasion	-10	Evasion Down	Decreases invulnerability during evasives moves from 0.2 seconds to 0.1 seconds.
+Evade Dist	10	Evade Extender	Increases evade distance by 50%.
+Dive Dist	10	Dive Enhancer	Distance traveled when performing running div away from large monsters is extended and can be performed toward them.
+Sense	10	Sneak	Decreases the likelihood of being targeted by monsters.
+Sense	-10	Taunt	Increases the likelihood of being targeted by monsters.
+Guard	10	Guard +1	"Decrease stamina consumed by blocking by 10, negate guard damage, and knockback by most attacks."
+Guard	15	Guard +2	"Decrease stamina consumed by blocking by 20, negate guard damage, and knockback by most attacks."
+Guard	-10	Guard -1	"Increase stamina consumed by blocking by 10, increase guard damage, and knockback by most attacks."
+Guard Up	10	Guard Boost	Causes previously unblockable attacks to become blockable.
+Status	10	Status Atk +1	Slightly increases the potency of abnormal attacks.
+Status	15	Status Atk +2	Significantly increases the potency of abnormal status attacks.
+Status	-10	Status Atk Down	Decreases the potency of abnormal status attacks.
+Fire Atk	10	Fire Atk +1	Increases damage of fire attacks and shots by 10%.
+Fire Atk	15	Fire Atk +2	Significantly increases the potency of fire attacks and shots by 20%.
+Fire Atk	-10	Fire Atk Down	Decreases damage of fire attacks and shots by 25%.
+Water Atk	10	Water Atk +1	Increases damage of water attacks and shots by 10%.
+Water Atk	15	Water Atk +2	Increases damage of water attacks and shots by 20%.
+Water Atk	-10	Water Atk Down	Decreases damage of water attacks and shots by 25%.
+ThunderAtk	10	Thunder Atk +1	Increases damage of thunder attacks and shots by 10%.
+ThunderAtk	15	Thunder Atk +2	Increases damage of thunder attacks and shots by 20%.
+ThunderAtk	-10	Thunder Atk Down	Decreases damage of thunder attacks and shots by 25%.
+Ice Atk	10	Ice Atk +1	Increases damage of ice attacks and shots by 10%.
+Ice Atk	15	Ice Atk +2	Increases damage of ice attacks and shots by 20%.
+Ice Atk	-10	Ice Atk Down	Decreases damage of ice attacks and shots by 25%.
+Dragon Atk	10	Dragon Atk +1	Increases damage of dragon attacks and shots by 10%.
+Dragon Atk	15	Dragon Atk +2	Increases damage of dragon attacks and shots by 20%.
+Dragon Atk	-10	Dragon Atk Down	Decreases damage of dragon attacks and shots by 25%.
+ElementAtk	10	Element Atk +1	"Increases damage of fire, water, thunder, ice, and dragon attacks by 20%."
+ElementAtk	-10	Element Atk Down	"Decreases damage of fire, water, thunder, ice, and dragon attacks by 10%."
+Fire Res	10	Fire Res +15	Increases fire resistance by 15.
+Fire Res	15	Fire Res +20	Increases fire resistance by 20.
+Fire Res	-10	Fire Res -20	Decreases fire resistance by 20.
+Water Res	10	Water Res +15	Increases water resistance by 15.
+Water Res	15	Water Res +20	Increases water resistance by 20.
+Water Res	-10	Water Res -20	Decreases water resistance by 20.
+ThunderRes	10	Thunder Res +15	Increases thunder resistance by 15.
+ThunderRes	15	Thunder Res +20	Increases thunder resistance by 20.
+ThunderRes	-10	Thunder Res -20	Decreases thunder resistance by 20.
+Ice Res	10	Ice Res +15	Increases ice resistance by 15.
+Ice Res	15	Ice Res +20	Increases ice resistance by 20.
+Ice Res	-10	Ice Res -20	Decreases ice resistance by 20.
+Dragon Res	10	Dragon Res +15	Increases dragon resistance by 15.
+Dragon Res	15	Dragon Res +20	Increases dragon resistance by 20.
+Dragon Res	-10	Dragon Res -20	Decreases dragon resistance by 20.
+Sharpness	10	Razor Sharp	Halves the rate at which your weapon loses sharpness.
+Sharpness	-10	Blunt Edge	Doubles the rate at which your weapon loses sharpness.
+Handicraft	10	Sharpness +1	Increases your weapon's sharpness by one level.
+Fencing	10	Mind's Eye	Prevents your attacks from being deflected.
+Sharpener	10	Speed Sharpening	Sharpening finishes in once scrape instead of three.
+Sharpener	-10	Slow Sharpening	Sharpneing finishes in five scrapes insteadof three.
+Crit Draw	10	Critical Draw	Increases affinity of unsheathing attack to +100%.
+PunishDraw	10	Punishing Draw	Adds impact damage to all unsheathing attacks.
+Reload Spd	10	Reload Speed +1	Bowgun reloading is slightly faster; bow coating application is decreased by 25%.
+Reload Spd	15	Reload Speed +2	Bowgun reloading is faster; bow coating is instantly applied.
+Reload Spd	20	Reload Speed +3	Bowgun reloading is significantly faster; bow coating is instantly applied.
+Reload Spd	-10	Reload Speed -1	"Bowgun reloading is slightly lower, bow coating application time increased by 10%."
+Reload Spd	-15	Reload Speed -2	"Bowgun reloading is slower, bow coating application time increased by 20%."
+Reload Spd	-20	Reload Speed -3	"Bowgun reloading is significantly slower, bow coating application time increased by 30%."
+Loading	10	Load Up	An extra bullet can be loaded into bowguns and gunlances and charge level of bows is increased by 1.
+Rapid Fire	10	Bonus Shot	Allows one extra shot to be fired while rapid firing.
+Recoil	10	Recoil Down +1	1x decrease in recoil while shooting.
+Recoil	15	Recoil Down +2	2x decrease in recoil while shooting.
+Recoil	20	Recoil Down +3	3x decrease in recoil while shooting.
+Recoil	-10	Recoil Down -1	1x increase in recoil while shooting.
+Recoil	-15	Recoil Down -2	2x increase in recoil while shooting.
+Recoil	-20	Recoil Down -3	3x increase in recoil while shooting.
+Precision	10	Steadiness +1	Decreases deviation while aiming.
+Precision	15	Steadiness +2	Negates deviation while aiming.
+Precision	-10	Steadiness -1	Increases deviation while aiming.
+Precision	-15	Steadiness -2	Greatly increases deviation while aiming.
+Normal Up	10	Normal/Rapid Up	Normal S and rapid arrow attack power increased by 10%.
+Pierce Up	10	Pierce/Pierce Up	Pierce S and pierce arrow attack power increased by 10%.
+Pellet Up	10	Pellet/Spread Up	"Pellet S and attack power is increased by 20%, spread arrow attack power increased by 30%."
+Normal S+	10	Use Any Normal S	Allows any normal shots (Normal S) to be loaded.
+Pierce S+	10	Use LV1 Pierce S	Allows LV1 pierce shots (Pierce S) to be loaded.
+Pierce S+	15	Use Any Pierce S	Allows any pierce shots (Pierce S) to be loaded.
+Pellet S+	10	Use LV1 Pellet S	Allows LV1 pellet shots (Pellet S) to be loaded.
+Pellet S+	15	Use Any Pellet S	Allows any pellet shots (Pellet S) to be loaded.
+Crag S+	10	Use LV1 Crag S	Allows LV1 crag shots (Crag S) to be loaded.
+Crag S+	15	Use Any Crag S	Allows any crag shots (Crag S) to be loaded.
+Clust S+	10	Use LV1 Clust S	Allows LV1 clust shots (Clust S) to be loaded.
+Clust S+	15	Use Any Clust S	Allows any clust shots (Clust S) to be loaded.
+Slicing S+	10	Use Slicing S	Allows slicing shots (Slice S) to be loaded.
+Slime S+	10	Use Slime S	Allows slime shots (Slime S) to be loaded.
+Poison C+	10	Use Poison Coat	Allows poison coating to be applied.
+Para C+	10	Use Para Coat	Allows paralize coating to be applied.
+Sleep C+	10	Use Sleep Coat	Allows sleep coating to be applied.
+Power C+	10	Use Power Coat	Allows power coating to be applied.
+C.Range C+	10	Use C.Range Coat	Allows close range coating to be applied.
+Exhaust C+	10	Use Exhaust Coat	Allows exhaust coating to be applied.
+Slime C+	10	Use Slime Coat	Allows slime coating to be applied.
+Maestro	10	Horn Maestro	Horn items break less often and hunting horn melodies last longer.
+Artillery	10	Artillery Novice	"Ballista, cannon, gunlance and wyvern attack power is increased by 10%, Crag S power increased by 10%."
+Artillery	15	Artillery Expert	"Ballista, cannon, gunlance and wyvern attack power is increased by 20%, Crag S power increased by 30%. Wyvernfire can be used every 90 seconds instead of 120 seconds."
+Bomb Boost	10	Bombardier	"Bomb damage is increased by 30%, including Slime S and Slime Coating, and combination rate is increased to 100%."
+Rec Level	10	Recovery Up	Effectiveness of health recovery items increased by 25%.
+Rec Level	-10	Recovery Down	Effectiveness of health recovery items decreased by 25%.
+Wide-Range	10	Wide-Range +1	The effect of certain items is transferred to companions in the same area at decreased efficacy.
+Wide-Range	20	Wide-Range +2	The effect of certain items is transferred to companions in the same area at normal efficacy.
+LastingPwr	10	Item Use Up	Increase effect time of certain times by 1.5x.
+LastingPwr	-10	Item Use Down	Decrease effect time of certain items by 33%.
+Hunger	10	Halve Hunger	Halves maximum stamina depletion speed.
+Hunger	15	Negate Hunger	Stamina never depletes.
+Hunger	-10	Raise Hunger	Raises maximum stamina depletion speed by 50%.
+Hunger	-15	Double Hunger	Doubles maximum stamina depletion speed.
+Gluttony	10	Gourmand	Effectiveness of stamina increasing items is increased 25% of the time.
+Gluttony	15	Scavenger	Effectiveness of stamina increasing items is increased. 33% chance of health recovery items increasing stamina.
+Eating	10	Speed Eating +1	Increases meat- and item-consuming speed.
+Eating	15	Speed Eating +2	Increases meat- and item-consuming speed of additional items.
+Eating	-10	Slow Eater	Increases meat- and item-consuming speed.
+Carnivore	10	Meat Lover	"Eating raw meat increases stamina by 50; eating rare/well-done steak, cool meat or hot meat stops stamina gauge from decreasing for one minute."
+Combo Rate	10	Combination +20%	Increases success rate of item combination by 20%.
+Combo Rate	15	Combination + 45%	Increases success rate of item combination by 45%.
+Combo Rate	-10	Combination -10%	Decreases success rate of item combination by 10%.
+Combo Rate	-15	Combination -20%	Decreases success rate of item combination by 20%.
+Combo Plus	10	Combination Pro	Always gives the maximum possible items given by a combination.
+Gathering	10	Gathering +1	Sometimes increases chances of gaining items from gathering points.
+Gathering	15	Gathering +2	Often increases chances of gaining items from gathering points.
+Gathering	-10	Gathering -1	Decreases chances of gaining items from gathering points.
+Spd Gather	10	Speed Gatherer	"Increases carving, gathering, bug catching, and mining speed."
+Whim	10	Spirit's Whim	"Decreases likelihood of pickaxe, bug nets, boomerangs, harpoons, and horns breaking by 25%."
+Whim	15	Divine Whim	"Decreases likelihood of pickaxe, bug nets, boomerangs, harpoons, and horns breaking by 50%."
+Whim	-10	Spectre's Whim	"Increases likelihood of pickaxe, bug nets, boomerangs, harpoons, and horns breaking by 25%."
+Whim	-15	Devil's Whim	"Increases likelihood of pickaxe, bug nets, boomerangs, harpoons, and horns breaking by 50%."
+Honey	10	Honey Hunter	"When gathering honey or royal honey from a hive or altaroth, two units will be gathered."
+Charmer	10	Charm Chaser	"When a talisman is discovered during mining, there is 20% chance that two will be gathered."
+Fate	10	Good Luck	Occasionally increases number of reward items received.
+Fate	15	Great Luck	Often increases number of reward items received.
+Fate	-10	Bad Luck	Occasionally decreases number of reward items received.
+Fate	-15	Horrible Luck	Often decreases number of reward items received.
+Carving	10	Carving Pro	Prevents carving from being interrupted from anything but wind pressure.
+Carving	15	Carving Master	Prevents carving from being interrupted from anything but wind pressure and increases number of carves by 1.
+Tranquilizr	10	Capture Expert	Increases likelihood of obtaining more reward items for captured large monsters.
+Tranquilizr	15	Capture Master	Significantly increases likelihood of obtaining more reward items for captured large monsters.
+Perception	10	Capture Guru	Painted monster will change colors when they can be captured.
+Psychic	10	Detect	66% chance of displaying unpainted monster's location every 5 minutes; increases amount of information shown when monster is painted.
+Psychic	15	Autotracker	Automatically displays location of monster on map without paint.
+Transporter	10	Pro Transporter	"Movement speed increased while carrying eggs, powderstones and other large items allows falling from high places without dropping item."
+Ranger	10	Outdoorsman	"Improves fishing and cooking results during quests and always displays the map, even without map item."
+Anti-Theft	10	Anti-Theft	Items will not be stolen from monsters that can steal items
+SpeedSetup	10	Trap Master	Increases speed of setting traps and barrel bombs and increases combination rate when creating items in a quest.
+Flame Aura	10	Flame Aura	Causes monsters to react as if you are carrying a torch even when you aren't.
+Oxygen	10	Endless Oxygen	Stops depletion of the oxygen gauge.
+Oxygen	-10	Short Breath	Increases consumption of the oxygen gauge by 25%.
+CurrentRes	10	Current Res (Lo)	Negates some of the water currents caused by large monsters.
+CurrentRes	15	Current Res (Hi)	Negates most of the water currents caused by large monsters.
+Swimming	10	Olympic Swimmer	Increases movement speed in water.
+Swimming	-10	Dog Peddler	Decreases movement speed in water.
+Sea Legs	10	Ocean's Blessing	"Grants Current Res (Hi), Olympic swimmer and Endless Oxygen."
+Potential	10	Adrenaline +1	Gain 40 defense when health is below 40% of maximum.
+Potential	15	Adrenaline +2	Gain 45 defense and 30% attack boost when health is below 40% of maximum.
+Potential	-10	Worrywart	Suffer 30% attack penalty and gain 21 defese when health is below 40% of maximum.
+Survivor	10	Fortify	"Fainting once increases attack by 10% and defense by 15%, fainting twice increases attack by 20% and defense by 30%. Effect is only applied twice."
+Gloves Off	10	Latent Power +1	"After suffering 180 points of damage within 5 minutes, affinity is increased by 30% and stamina consumption is decreased by 50%."
+Gloves Off	15	Latent Power +2	"After suffering 180 points of damage within 5 minutes, affinity is increased by 50% and stamina consumption is decreased by 75%."
+Spirit	10	Challenger +1	"Attack power is increased by 10 and affinity by 10% when in the same area as an enraged monster,"
+Spirit	15	Challenger +2	Attack power is increased by 25 and affinity by 20% when in the same area as an enraged monster.
+Unscathed	10	Peak Performance	Increases attack significantly when health is full.
+FreeElemnt	10	Awaken	Releases the latent elemental properties in weapons that don't have elements.
+Blight Res	10	Blights Negated	"Negates effects of fire, water, thunder, ice, and dragon blights."
+Unshakable	10	Rock Steady	"Knockdown effects are reduced, also grants Wind Proof (Lo), Earplugs and Current Res (Lo)."
+Guts	10	Guts	"When health is above 64, hunter will survive a single attack that would caue fainting. Only occurs once unless hunter faints."
+TeamPlayer	10	Shakalaka Rally	Kayamba and Cha-Cha attack and defense is increased by 10% and stamina recovery is increased by 50%.
+TeamLeader	10	Shakalaka Cheer	Kayamba and Cha-Cha will be instantly revived when they are signaled. Only works once every 10 minutes.
+Fury	10	Wrath Awoken	At above 40% health guts is activated and while at below 40% health Adrenaline +2 is activated.
+Edgemaster	10	Honed Blade	Enables Sharpness +1 and Attack Up (L).
+Steadyhand	10	Silver Bullet	"Normal S, Pierce S, rapid and pierce arrows attack increased by 10%, Pellet S attack increased by 20%, spread arrow increased by 30%."
+Auto-Guard	10	Auto-Guard	"Attacks are automatically guarded if hunter is not attacking, rolling or using a weapon without guard."
+Auto-Guard			

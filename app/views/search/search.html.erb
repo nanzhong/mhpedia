@@ -40,3 +40,29 @@
     <% end %>
   </ul>
 <% end %>
+
+<% unless @skills.empty? %>
+  <h2 class="subheader">Skills (<%= @skills.count %>)</h2>
+  <ul class="small-block-grid-1 large-block-grid-2">
+    <% @skills.each do |skill| %>
+      <li>
+      <div class="panel">
+        <%= link_to skill.name, skill %>
+      </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @skill_effects.empty? %>
+  <h2 class="subheader">Skill Effects (<%= @skill_effects.count %>)</h2>
+  <ul class="small-block-grid-1 large-block-grid-2">
+    <% @skill_effects.each do |effect| %>
+      <li>
+      <div class="panel">
+        <%= link_to effect.name, skill_path(effect.skill_id) %>
+      </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

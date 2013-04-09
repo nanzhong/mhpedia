@@ -1,0 +1,47 @@
+<% content_for(:title) { @skill.name } %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1><%= @skill.name %></h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <% if @skill.skill_type == Skill::Type::FELYNE %>
+      <div class="panel">
+        <p><strong>Description:</strong>
+        <%= @skill.description %>
+        </p>
+      </div>
+      <h4 class="subheader">Food Recipes</h4>
+      <div class="panel">
+        <p><em>Food recipes that give this skill coming soon...</em></p>
+      </div>
+    <% else %>
+      <h4 class="subheader">Skill Effects</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Effect</th>
+            <th>Points</th>
+            <th style="width: 70%;">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @skill.effects.each do |effect| %>
+            <tr>
+              <td><%= effect.name %></td>
+              <td><%= effect.points %></td>
+              <td><%= effect.description %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <h4 class="subheader">Skill Effects</h4>
+      <div class="panel">
+        <p><em>Armors providing this skill coming soon...</em></p>
+      </div>
+    <% end %>
+  </div>
+</div>

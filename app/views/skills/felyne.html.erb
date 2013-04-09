@@ -1,0 +1,23 @@
+<% content_for(:title) { 'Armor Skills' } %>
+
+<h1>Armor Skills</h1>
+<div class="row">
+  <div class="small-12 columns">
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Name</th>
+          <th style="width: 75%;">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @skills.each do |skill| %>
+          <tr>
+            <td><%= link_to skill.name, skill %></td>
+            <td><%= skill.description %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
